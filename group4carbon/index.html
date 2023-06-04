@@ -143,7 +143,7 @@
             },
             backgroundColor: 'transparent',
             width: '100%',
-            height: 400
+            height: 600
           };
           var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
           chart.draw(data, options);
@@ -201,7 +201,7 @@
       },
       backgroundColor: 'transparent',
       width: '100%',
-      height: 400
+      height: 600
     };
 
     var chart2 = new google.visualization.PieChart(document.getElementById('chart_div2'));
@@ -224,14 +224,13 @@
   function drawCharts() {
     var data1 = google.visualization.arrayToDataTable([
       ['Task', 'Percentage'],
-      ['Option A', 40],
-      ['Option B', 30],
-      ['Option C', 10],
-      ['Option D', 20]
+      ['Not at all aware', 8],
+      ['Somewhat Aware', 45],
+      ['Very aware', 14]
     ]);
 
     var options1 = {
-      title: 'Options Distribution',
+      title: 'How aware are you about fast fashion?',
       titleTextStyle: {
         color: 'white',
         fontSize: 16
@@ -243,7 +242,7 @@
       },
       backgroundColor: 'transparent',
       width: '100%',
-      height: 400
+      height: 600
     };
 
     var chart1 = new google.visualization.PieChart(document.getElementById('chart_div3'));
@@ -251,14 +250,15 @@
 
     var data2 = google.visualization.arrayToDataTable([
       ['Task', 'Percentage'],
-      ['Category A', 60],
-      ['Category B', 10],
-      ['Category C', 5],
-      ['Category D', 25]
+      ['Once a week', 0],
+      ['Once a month', 5],
+      ['Once every 6 months', 2],
+      ['Once a year', 1],
+	  ['Whenever I need new clothes', 1]
     ]);
 
     var options2 = {
-      title: 'Categories Distribution',
+      title: 'How often do you thrift?',
       titleTextStyle: {
         color: 'white',
         fontSize: 16
@@ -270,7 +270,7 @@
       },
       backgroundColor: 'transparent',
       width: '100%',
-      height: 400
+      height: 600
     };
 
     var chart2 = new google.visualization.PieChart(document.getElementById('chart_div4'));
